@@ -28,9 +28,9 @@ class ScreencaptureViewModel: ObservableObject {
             }
         }
     }
+
     
-    
-    public func takeScreenShot(type: ScreenshotType) {
+    public func takeScreenShot(for type: ScreenshotType) {
         
         let task = Process()
         task.executableURL = URL(fileURLWithPath: "/usr/sbin/screencapture")

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct ScreencaptureAppApp: App {
+        
     var body: some Scene {
         WindowGroup {
             ContentView()

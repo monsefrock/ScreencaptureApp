@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C39DF3BD2D824AE800D5148B /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = C39DF3BC2D824AE800D5148B /* HotKey */; };
+		C39DF3CE2D82590700D5148B /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = C39DF3CD2D82590700D5148B /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C39DF38F2D806AED00D5148B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39DF3BD2D824AE800D5148B /* HotKey in Frameworks */,
+				C39DF3CE2D82590700D5148B /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = ScreencaptureApp;
 			packageProductDependencies = (
+				C39DF3BC2D824AE800D5148B /* HotKey */,
+				C39DF3CD2D82590700D5148B /* KeyboardShortcuts */,
 			);
 			productName = ScreencaptureApp;
 			productReference = C39DF37D2D806AEC00D5148B /* ScreencaptureApp.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = C39DF3742D806AEC00D5148B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C39DF3BB2D824AE800D5148B /* XCRemoteSwiftPackageReference "HotKey" */,
+				C39DF3CC2D82590700D5148B /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C39DF37E2D806AEC00D5148B /* Products */;
 			projectDirPath = "";
@@ -519,7 +532,7 @@
 				C39DF3A12D806AED00D5148B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C39DF3A22D806AED00D5148B /* Build configuration list for PBXNativeTarget "ScreencaptureApp" */ = {
 			isa = XCConfigurationList;
@@ -528,7 +541,7 @@
 				C39DF3A42D806AED00D5148B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C39DF3A52D806AED00D5148B /* Build configuration list for PBXNativeTarget "ScreencaptureAppTests" */ = {
 			isa = XCConfigurationList;
@@ -537,7 +550,7 @@
 				C39DF3A72D806AED00D5148B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C39DF3A82D806AED00D5148B /* Build configuration list for PBXNativeTarget "ScreencaptureAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,9 +559,41 @@
 				C39DF3AA2D806AED00D5148B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C39DF3BB2D824AE800D5148B /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C39DF3CC2D82590700D5148B /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C39DF3BC2D824AE800D5148B /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39DF3BB2D824AE800D5148B /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+		C39DF3CD2D82590700D5148B /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39DF3CC2D82590700D5148B /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C39DF3752D806AEC00D5148B /* Project object */;
 }
